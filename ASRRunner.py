@@ -12,6 +12,8 @@ import os
 import base64
 import json
 
+# input directory path and folder name
+# Use Tencent Cloud API to process audio file under the folder
 class ASRRunner(object):
     def __init__(self, dir_path, folder_name):
         super().__init__()

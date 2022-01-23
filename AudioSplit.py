@@ -8,6 +8,7 @@ from ASRRunner import ASRRunner
 import math
 import os
 
+# If audio file is too large, split it to 5MB for each chunk first, then save merge its result and save to new file
 class AudioSplit(object):
     def __init__(self, folder_name, dir_path):
         super().__init__()

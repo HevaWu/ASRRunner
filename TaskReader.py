@@ -10,6 +10,7 @@ import json
 import os
 import time
 
+# Retrieve a specific TaskId result and save result to a file
 class TaskReader(object):
     def __init__(self, secret_id, secret_key, task_id, output_path):
         super().__init__()
