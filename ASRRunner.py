@@ -22,6 +22,8 @@ class ASRRunner(object):
         # Get all files under folder
         file_path = os.path.join(self.dir_path, self.folder_name)
         for file_name in os.listdir(file_path):
+            if os.path.isdir(os.path.join(file_path, file_name)):
+                continue
             print("Start Handle" + file_name)
             self.process_file(file_name, file_path)
 
@@ -69,7 +71,8 @@ class ASRRunner(object):
             if resp_json["Data"]["TaskId"]:
                 task_id = resp_json["Data"]["TaskId"]
                 output_file_name = file_name.split(".")[0] + '.txt'
-                output_file_path = os.path.join(file_path, output_file_name)
+                output_folder = os.path.join(file_path, "result")
+                output_file_path = os.path.join(output_folder, output_file_name)
 
                 # use response json(TaskId) to retrieve final text file
                 task_reader = TaskReader(secret_id, secret_key, task_id, output_file_path)

@@ -8,7 +8,7 @@ import os
 def main():
     dir_path = os.path.dirname(__file__)
     # folder should under dir_path
-    folder_name = ''
+    folder_name = 'example/zh'
 
     runner = ASRRunner(dir_path, folder_name)
     runner.run()
