@@ -55,7 +55,7 @@ class ASRRunner(object):
 
             req = models.CreateRecTaskRequest()
             params = {
-                "EngineModelType":"8k_zh",
+                "EngineModelType":"16k_en",
                 "ChannelNum":1,
                 "ResTextFormat":0,
                 "SourceType":1,
