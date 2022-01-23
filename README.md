@@ -1,5 +1,7 @@
 # ASRRunner
-Use Tencent Cloud to Process Audio and Transfer Local Voice Memo to Text File
+Use Tencent Cloud to Process Audio and Transfer Local Voice Memo to Text File.
+
+Blog: https://hevawu.github.io/blog/2022/01/23/Transfer-Audio-Memo-to-Text-File
 
 ## How to Run it
 
